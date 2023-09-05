@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title</title>
     <style>
-        body {
+
+        /*  Body Style */
+        
+          body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0D1B2A; /* Set background color to black */
-            color: white; /* Set text color to white */
+            font-family: "Arial", sans-serif;
+            /*background-color: #0D1B2A; */
+            color: white;
 
+            /*background-image: url('forcover.jpg'); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            color: white;
         }
+        /* END Body Style */
 
-      #header {
+        /* Header Style */
+
+        #header {
             background-color: #0D1B2A; 
             color: white;
             display: flex;
@@ -43,17 +54,11 @@
             transform: scale(1.05); /* Slight scale-up on hover */
         }
 
-       /* #logo {
-            width: 100px;
-            height: 80px; 
-            background-image: url('logo.jpg'); 
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin-left: 20px; /* Add margin to separate the logo from the text */
-        }
+        /* END Header Style */
 
+        /* LOGO Style */
 
-#logo a {
+        #logo a {
             display: block;
             width: 100px;
             height: 100px;
@@ -73,78 +78,26 @@
             color: white;
         }
 
-
-
-        #social-icons {
-            display: inline-block;
-            align-items: center;
-            margin-right: 50px;
-            padding-left: 200px;
-        }
-        #facebook-icon,
-        #instagram-icon {
-            font-size: 40px;
-            margin-left: 5px;
-            color: white;
-           margin-right: 40px;
-        }
-
-        .square-container {
-            display: grid;
-            grid-template-columns: repeat(3, 200px); /* Three columns of 200px each */
-            grid-gap: 50px; /* Adjust the gap between squares */
-            margin-top: 80px; /* Add margin to separate the header and the grid */
-            justify-content: center; /* Center the grid horizontally */
-        }
-
-        .square {
-            width: 200px;
-            height: 300px;
-            background-color: #6A5ACD; /* Purple background color */
-            border-radius: 15px; /* Rounded corners */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
-            transition: transform 0.2s, background-color 0.3s;
-        }
-
-        .square:hover {
-            background-color: #ff6600; /* Orange background color on hover */
-            transform: scale(1.05); /* Scale-up effect on hover */
-        }
+        /* END LOGO Style */
+       
     </style>
 </head>
 <body>
-    <div id="header">
+    <!--- HEADER ---->
+   <div id="header">
         <!-- Logo on the top left -->
         <div id="logo">
-            <span id="logo-text"><span id="pay">Pay</span><span id="electronics">Electronics</span></span>
+            <a href="index.html"></a> <!-- Make the logo a clickable link to the home page -->
         </div>
-        <div id="pages">
+        <div>
             <!-- Text buttons on the top right -->
             <a href="sponsor.html" class="button">Sponsor</a>
             <a href="designer.html" class="button">Designer</a>
             <a href="feedback.html" class="button">Feedback</a>
-            <div id="social-icons">  
-            <a href="https://www.facebook.com/profile.php?id=100094055017198" id="facebook-icon"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/pay_electronics/" id="instagram-icon"><i class="fab fa-instagram"></i></a>
         </div>
-        </div>
-    <div class="square-container">
-        <!-- Purple squares -->
-        <div class="square">2100Da</div>
-        <div class="square">3100Da</div>
-        <div class="square">4400Da</div>
-        <div class="square">6500Da</div>
-        <div class="square">8400Da</div>
-        <div class="square">19900Da</div>
-        <div class="square">7</div>
-        <div class="square">8</div>
-        <div class="square">9</div>
     </div>
+    <!------ END HEADER ----->
+
+    
 </body>
 </html>
